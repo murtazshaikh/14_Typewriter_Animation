@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 :root{
     --bg-color: hsl(49 37% 94%);
@@ -77,3 +79,12 @@ h1::after{
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 600px){
+    h1 {
+      font-size: clamp(1rem, 0.5vw + 1rem, 4rem);
+    }
+    .subtitle {
+      font-size: 4vw;
+    }
+  }  
